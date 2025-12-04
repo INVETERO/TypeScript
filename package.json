@@ -1,0 +1,9 @@
+{
+  "name": "pr5",
+  "version": "1.0.0",
+  "main": "dist/pr5.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/pr5.js"
+  }
+}
