@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TS Template — Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header id="site-header">
+    <h1>Demo Template</h1>
+    <button id="open-modal">Відкрити модальне вікно</button>
+  </header>
+
+  <main>
+    <section id="hero">
+      <p>Прокрутіть вниз, щоб побачити анімацію та завантажені пости.</p>
+    </section>
+
+    <section id="posts">
+      <h2>Пости (з jsonplaceholder)</h2>
+      <div id="posts-container"></div>
+      <button id="load-more">Завантажити ще</button>
+    </section>
+  </main>
+
+  <div id="modal" class="modal hidden" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <button id="close-modal" class="close">✕</button>
+      <h3>Модальне вікно</h3>
+      <p>Тут можна показати деталі поста або форму.</p>
+    </div>
+  </div>
+
+  <script src="dist/main.js" defer></script>
+</body>
+</html>
