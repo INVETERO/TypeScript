@@ -1,0 +1,16 @@
+{
+  "name": "pr4",
+  "version": "1.0.0",
+  "main": "dist/bundle.js",
+  "scripts": {
+    "build": "esbuild src/main.ts --bundle --format=iife --target=es2017 --outfile=dist/bundle.js --sourcemap",
+    "typecheck": "tsc --noEmit",
+    "watch": "esbuild src/main.ts --bundle --format=iife --target=es2017 --outfile=dist/bundle.js --sourcemap --watch",
+    "start": "live-server --open=index.html --port=5500"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0",
+    "typescript": "^5.9.3",
+    "live-server": "^1.2.2"
+  }
+}

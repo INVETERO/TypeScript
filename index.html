@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <title>Живі нотатки — стрічка постів</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header id="header" class="site-header">
+    <div class="brand">
+      <span class="brand-dot"></span>
+      <div>
+        <div class="eyebrow">Локальна збірка</div>
+        <div class="brand-title">Живі нотатки</div>
+      </div>
+    </div>
+    <button id="open-modal" class="ghost-btn">Що це за проєкт?</button>
+  </header>
+
+  <main class="page">
+    <section class="hero">
+      <p class="eyebrow">TypeScript + модулі</p>
+      <h1>Стрічка випадкових історій</h1>
+      <p class="lede">Тестовий фронт без шаблонів: прокручуємо, підвантажуємо дописи, відкриваємо модалку з деталями.</p>
+      <div class="cta">
+        <button id="load-more" class="primary-btn">Показати ще 5</button>
+        <button class="secondary-btn" id="open-modal-shortcut">Навіщо тут модалка?</button>
+      </div>
+    </section>
+
+    <section class="feed" id="posts-container"></section>
+  </main>
+
+  <div id="modal" class="hidden" aria-hidden="true" role="dialog" aria-label="Деталі допису">
+    <div class="modal-card">
+      <div class="modal-head">
+        <span class="eyebrow">Деталі</span>
+        <button id="close-modal" class="icon-btn" aria-label="Закрити">✕</button>
+      </div>
+      <div class="modal-content">
+        <h3>Порожньо</h3>
+        <p>Натисніть на будь-який допис, щоб подивитися його текст.</p>
+      </div>
+    </div>
+  </div>
+
+  <script defer src="./dist/bundle.js"></script>
+</body>
+</html>
